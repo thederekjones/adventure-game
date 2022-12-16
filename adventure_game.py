@@ -2,11 +2,13 @@ import time
 import random
 
 
+# Define a length of time to pause as new messages appear on the screen.
 def print_pause(message):
     print(message)
     time.sleep(2)
 
 
+# Introduction to the story for the game itself.
 def intro(ancient_artifact, enemy):
     print_pause("You awaken in a dark room with an old,"
                 " dirty lamp lit in the corner.")
@@ -22,6 +24,8 @@ def intro(ancient_artifact, enemy):
                 " and to your right is a window.")
 
 
+# Ask the user for input to continue the story. If the user provides
+# invalid input, it will ask them to enter a valid choice.
 def escape(ancient_artifact, enemy):
     print_pause("Press 1 to go through the door.")
     print_pause("Press 2 to go through the window.")
@@ -39,6 +43,8 @@ def escape(ancient_artifact, enemy):
             escape(ancient_artifact, enemy)
 
 
+# Provides different story output depending on whether or not the user
+# has made this selection previously. Returns user to escape() selection.
 def door(ancient_artifact, enemy):
     if "blade" in ancient_artifact:
         print_pause("You slowly open the door. The trunk"
@@ -57,6 +63,9 @@ def door(ancient_artifact, enemy):
     escape(ancient_artifact, enemy)
 
 
+# If the user chose to open the door before the window, they will have
+# the weapon needed to defeat the enemy, otherwise they will lose. The
+# option to start a new game and repeat is available no matter the outcome.
 def window(ancient_artifact, enemy):
     print_pause("You go to the window. You're in luck! The"
                 " window is unlocked.")
@@ -88,6 +97,8 @@ def window(ancient_artifact, enemy):
         new_game()
 
 
+# Ask the user whether they want to start a new game or not, and if a
+# "yes" or "no" isn't selected, ask the user for valid feedback only.
 def new_game():
     print_pause("You wake up... your body covered in sweat.")
     response = input("Would you like to play again? Please"
@@ -106,6 +117,9 @@ def new_game():
         new_game()
 
 
+# Randomly select an enemy for the story. The name of the enemy will be
+# reflected inside of the name for the weapon. The ancient_artifact array
+# starts empty and holds the weapon if found in the story.
 def start_game():
     ancient_artifact = []
     enemy = random.choice(["werewolf", "vampire", "skinwalker",
