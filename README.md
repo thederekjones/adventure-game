@@ -25,6 +25,6 @@ The goal of this project was to create a text-based adventure game using Python.
 
 
 ### The game starts by running the following command:
-```sh
+```
 python adventure-game.py
 ```
