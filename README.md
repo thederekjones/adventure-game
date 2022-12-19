@@ -28,3 +28,7 @@ The goal of this project was to create a text-based adventure game using Python.
 ```
 python adventure-game.py
 ```
+
+<p>&nbsp;</p>
+
+### You must have Python 3 installed. Download it [here](https://www.python.org/downloads/).
