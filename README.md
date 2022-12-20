@@ -20,6 +20,10 @@ The goal of this project was to create a text-based adventure game using Python.
   * [x] Reduce redundancy by applying the DRY principle.
   * [x] Use intuitive function names and avoid generic names to provide clear context.
   * [x] Avoid using global variables in the functions.
+* ### To-Do
+  * [ ] Expand the story and create more ways to win or lose.
+  * [ ] Creat a way to let the script without requiring local CLI.
+
 
 <p>&nbsp;</p>
 
