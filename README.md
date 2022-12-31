@@ -32,6 +32,10 @@ The goal of this project was to create a text-based adventure game using Python.
 ```
 python adventure-game.py
 ```
+or
+```
+./adventure-game.py
+```
 
 <p>&nbsp;</p>
 
