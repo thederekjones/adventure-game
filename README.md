@@ -30,7 +30,7 @@ The goal of this project was to create a text-based adventure game using Python.
 
 ### The game starts by running the following command:
 ```
-python adventure-game.py
+python3 adventure-game.py
 ```
 or
 ```
