@@ -14,7 +14,7 @@ The goal of this project was to create a text-based adventure game using Python.
 * [x] Create win and lose conditions
 * [x] Check if the player wants to play again
 * [x] Check your style with pycodestyle
-* [x]  Test Your Code
+* [x] Test Your Code
 * ### Standout Suggestions
   * [x] Identify the repetitive parts and refactor them into functions.
   * [x] Reduce redundancy by applying the DRY principle.
